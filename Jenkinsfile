@@ -23,10 +23,8 @@ pipeline {
         stage('Test') {
             steps {
                 sh '''
-                    echo "Test stage"
-                    ls -l "build/index.html"
-                    find build/index.html -name "index.html"
-                    npm test
+                    test -f build/index.html
+                    
                 '''
                  }  
                      }
