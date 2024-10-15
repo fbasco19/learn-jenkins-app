@@ -26,7 +26,7 @@ pipeline {
                     echo "Test stage"
                     ls -l "build/index.html"
                     find build/index.html -name "index.html"
-                    npm test a
+                    npm: test a
                 '''
                  }  
                      }
